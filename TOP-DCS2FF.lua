@@ -1,4 +1,6 @@
 local broadcastIP = '192.168.1.255' -- Look at your own network IP addresses to and replace the last number by 255
+package.path  = package.path..";"..lfs.currentdir().."/LuaSocket/?.lua"
+package.cpath = package.cpath..";"..lfs.currentdir().."/LuaSocket/?.dll"
 local socket = require("socket")
 local port = 49002
 
